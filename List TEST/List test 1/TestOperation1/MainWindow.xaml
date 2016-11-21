@@ -8,8 +8,8 @@
         Title="MainWindow" Height="438" Width="720.333">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="68*"/>
-            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="168"/>
         </Grid.ColumnDefinitions>
         <ListView x:Name="listViewOperations" Margin="10">
             <ListView.View>
@@ -17,7 +17,7 @@
                     <GridViewColumn Header="Type" Width="50"/>
                     <GridViewColumn Header="Index" Width="60"/>
                     <GridViewColumn Header="Operation Name" Width="200"/>
-                    <GridViewColumn Header="Parameters" Width="200"/>
+                    <GridViewColumn Header="Parameters" Width="200" />
                 </GridView>
             </ListView.View>
         </ListView>
