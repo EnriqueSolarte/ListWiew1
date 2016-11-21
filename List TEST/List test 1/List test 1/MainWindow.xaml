@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="527.5" Width="676.5">
     <Grid Margin="0,0,2,0">
-        <ListView x:Name="listView" Margin="10,10,154,10">
+        <ListView x:Name="listView" Margin="10,10,110,10" SelectionChanged="listView_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Nombre" Width="100" DisplayMemberBinding="{Binding Path=Name}"/>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="TestOperation1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestOperation1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="438" Width="720.333">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="21*"/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="listViewOperations" Margin="10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Type" Width="50"/>
+                    <GridViewColumn Header="Index" Width="60"/>
+                    <GridViewColumn Header="Operation Name" Width="200"/>
+                    <GridViewColumn Header="Parameters" Width="200"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="buttonOp1" Content="Operation 1" Height="24" Margin="21,39,21,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="buttonOp2" Content="Operation 2" Height="24" Margin="21,68,21,0" VerticalAlignment="Top" Grid.Column="1"/>
+
+    </Grid>
+</Window>

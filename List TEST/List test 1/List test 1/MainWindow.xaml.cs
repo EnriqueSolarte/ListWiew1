@@ -18,6 +18,9 @@ namespace List_test_1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// https://www.youtube.com/watch?v=vWCB0gjSmPg
+    /// Video de youtube donde realizan un ejemplo basico de listView
+    /// 
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -30,6 +33,11 @@ namespace List_test_1
 
             this.listView.ItemsSource = null;
             this.listView.ItemsSource = lst;
+        }
+
+        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
