@@ -14,15 +14,15 @@
         <ListView x:Name="listViewOperations" Margin="10">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Type" Width="50"/>
-                    <GridViewColumn Header="Index" Width="60"/>
-                    <GridViewColumn Header="Operation Name" Width="200"/>
-                    <GridViewColumn Header="Parameters" Width="200" />
+                    <GridViewColumn Header="Type" Width="50" DisplayMemberBinding="{Binding Path=Type}"/>
+                    <GridViewColumn Header="Index" Width="60" DisplayMemberBinding="{Binding Path=Index}"/>
+                    <GridViewColumn Header="Operation Name" Width="200" DisplayMemberBinding="{Binding Path=OperationType}"/>
+                        <GridViewColumn Header="Parameters" Width="200" DisplayMemberBinding="{Binding Path=Parameters}"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="buttonOp1" Content="Operation 1" Height="24" Margin="21,39,21,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Button x:Name="buttonOp2" Content="Operation 2" Height="24" Margin="21,68,21,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="buttonOp1" Content="Operation 1" Height="24" Margin="21,39,21,0" VerticalAlignment="Top" Grid.Column="1" Click="buttonOp1_Click"/>
+        <Button x:Name="buttonOp2" Content="Operation 2" Height="24" Margin="21,68,21,0" VerticalAlignment="Top" Grid.Column="1" Click="buttonOp2_Click"/>
 
     </Grid>
 </Window>
