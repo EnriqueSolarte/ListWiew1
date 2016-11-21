@@ -23,6 +23,13 @@ namespace List_test_1
         public MainWindow()
         {
             InitializeComponent();
+            List<Personas> lst = new List<Personas>();
+            lst.Add(new Personas { Name = "Pepe", Edad = 25, Pais = Paises.Peru });
+            lst.Add(new Personas { Name = "Carlos", Edad = 22, Pais = Paises.Ecuador });
+            lst.Add(new Personas { Name = "Felipe", Edad = 28, Pais = Paises.Mexico });
+
+            this.listView.ItemsSource = null;
+            this.listView.ItemsSource = lst;
         }
     }
 }

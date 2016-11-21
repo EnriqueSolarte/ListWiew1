@@ -10,7 +10,9 @@
         <ListView x:Name="listView" Margin="10,10,154,10">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+                    <GridViewColumn Header="Nombre" Width="100" DisplayMemberBinding="{Binding Path=Name}"/>
+                    <GridViewColumn Header="Edad" Width="100" DisplayMemberBinding="{Binding Path=Edad}"/>
+                    <GridViewColumn Header="Pais" Width="100" DisplayMemberBinding="{Binding Path=Pais}"/>
                 </GridView>
             </ListView.View>
         </ListView>
