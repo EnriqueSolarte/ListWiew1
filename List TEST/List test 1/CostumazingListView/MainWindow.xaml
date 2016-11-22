@@ -11,13 +11,13 @@
             <ColumnDefinition Width="705*"/>
             <ColumnDefinition Width="122*"/>
         </Grid.ColumnDefinitions>
-        <ListView x:Name="listViewoperations" Margin="10" HorizontalAlignment="Stretch" Width="Auto">
+        <ListView x:Name="listViewOperations" Margin="10" HorizontalAlignment="Stretch" Width="Auto">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Type" Width="50">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <Image Source="{Binding ImagineSource}" Width="25" Height="25"/>
+                                <Image Source="{Binding Type}" Width="25" Height="25"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -36,8 +36,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="buttonOperation1" Content="External Turning" HorizontalAlignment="Left" Margin="0,11,0,0" VerticalAlignment="Top" Width="102" Grid.Column="1"/>
-        <Button x:Name="buttonOperation2" Content="Internal Turning" HorizontalAlignment="Left" Margin="0,36,0,0" VerticalAlignment="Top" Width="102" Grid.Column="1"/>
+        <Button x:Name="buttonOperation1" Content="External Turning" HorizontalAlignment="Left" Margin="0,11,0,0" VerticalAlignment="Top" Width="102" Grid.Column="1" Click="buttonOperation1_Click"/>
+        <Button x:Name="buttonOperation2" Content="Internal Turning" HorizontalAlignment="Left" Margin="0,36,0,0" VerticalAlignment="Top" Width="102" Grid.Column="1" Click="buttonOperation2_Click"/>
 
     </Grid>
 </Window>
