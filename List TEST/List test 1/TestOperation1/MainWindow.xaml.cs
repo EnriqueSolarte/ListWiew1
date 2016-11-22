@@ -33,29 +33,30 @@ namespace TestOperation1
 
         private void buttonOp1_Click(object sender, RoutedEventArgs e)
         {
-           
-            currentList.Add(new Operation
+            
+            this.currentList.Add(new Operation
             {
                 Type = types.RGH,
                 Index = DateTime.Now.ToString("hhmmss"),
                 OperationType = operations.External_Turning,
-                Parameters = "Z=150 XF=25.25 F125.25 Z2.5 S=12.5 Mx=12.45 TF=125.8"
+                Parameters = " ONE Z=150 XF=25.25 F125.25 Z2.5 S=12.5 Mx=12.45 TF=125.8"
             });
-            
-            this.listViewOperations.Items.Add(currentList);
+            this.listViewOperations.ItemsSource = null;
+            this.listViewOperations.ItemsSource = currentList;
 
         }
 
         private void buttonOp2_Click(object sender, RoutedEventArgs e)
         {
-            currentList.Add(new Operation
+            this.currentList.Add(new Operation
             {
                 Type = types.ZTH,
                 Index = DateTime.Now.ToString("hhmmss"),
                 OperationType = operations.Internal_Turning,
-                Parameters = "Z=150 XF=25.25 F125.25 Z2.5 S=12.5 Mx=12.45 TF=125.8"
+                Parameters = " TWO Z=150 XF=25.25 F125.25 Z2.5 S=12.5 Mx=12.45 TF=125.8"
             });
-            this.listViewOperations.Items.Add(currentList);
+            this.listViewOperations.ItemsSource = null;
+            this.listViewOperations.ItemsSource = currentList;
         }
     }
 }
