@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CostumazingListView"
         mc:Ignorable="d"
-        Title="MainWindow" Height="511" Width="833" ResizeMode="NoResize">
+        Title="MainWindow" Height="514" Width="857" ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="705*"/>
             <ColumnDefinition Width="122*"/>
         </Grid.ColumnDefinitions>
-        <ListView x:Name="listViewOperations" Margin="10" HorizontalAlignment="Stretch" Width="Auto">
+        <ListView x:Name="listViewOperations" Margin="10" HorizontalAlignment="Center" Width="Auto">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Type" Width="50">
@@ -29,7 +29,7 @@
                     <GridViewColumn  Width="70">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <Button Content="Edit"/>
+                                <Button Content="Edit" Width="50"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
